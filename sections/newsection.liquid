@@ -1,0 +1,28 @@
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="new-section__content">
+                <h2 class="new-section__title">{{ section.settings.title }}</h2>
+                testing123
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "New Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "New Section"
+        }
+    ],
+    "presets": [
+        {
+            "name": "New Section"
+        }
+    ]
+}
+{% endschema %}
